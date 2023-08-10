@@ -1,10 +1,11 @@
+using System;
 public static class DecimalToBinary
 {
     static void Main() 
     {
         string returnString = "10";
-        int current = ulong.Parse(c);
+        long current = long.Parse(returnString);
         string binString = System.Convert.ToString(current, 2);
-        System.WriteLine(binString);
+        System.Console.WriteLine(binString);
     }
 }
