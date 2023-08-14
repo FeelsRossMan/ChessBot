@@ -1,11 +1,15 @@
 using System;
-public static class DecimalToBinary
+using UnityEngine;
+namespace Chess
 {
-    static void Main() 
+    public class DecimalToBinary : MonoBehaviour
     {
-        string returnString = "10";
-        long current = long.Parse(returnString);
-        string binString = System.Convert.ToString(current, 2);
-        System.Console.WriteLine(binString);
+        public static void Convert(string testString) 
+        {
+            long current = long.Parse(testString);
+            string binString = System.Convert.ToString(current, 2);
+            
+            Debug.Log(binString);
+        }
     }
 }
